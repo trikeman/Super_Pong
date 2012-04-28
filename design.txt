@@ -1,0 +1,25 @@
+Purpose/Overview:
+This program is intended to be an upgraded versioin of the game "Pong".  It includes enemy AI,
+powerups for the ball, and obstacles changing the shape of the field in later levels.
+
+Classes:
+
+-Ball: this is the basic ball
+	-Fast_Ball: this is the ball after touching the Fast_Powerup.  It moves at twice the speed.
+	-Little_Ball: this is the ball after touching the Little_Powerup.  It is half the size.
+	-Big_Ball: this is the ball after touching the Big_Powerup.  It is twice the size.
+-Paddle: this is the base class of all paddles.
+	-Player: this is the player-controlled paddle.
+	-Opponent: this is the basic enemy, AI-controlled paddle.
+		-Fast: this is the enemy during the second level.  It's AI moves it faster, and more accurately.
+		-Accurate: this is the most advanced enemy.  It's AI moves it so that it hits the ball at the sharpest angles.
+-Powerup: this is the base class for all of the powerups
+	-Fast_Powerup: this powerup makes the ball go faster.
+	-Little_Powerup: this powerup makes the ball smaller.
+	-Big_Powerup: this powerup makes the ball larger.
+-Obstacle: this makes the ball bounce off of it.  It is placed around the later levels to change the dynamics of the game.
+-Pong: This class handles the game itself, doing such things as collision detection, and moving the objects on-screen at any time.
+
+Instructions:
+
+Players press start to begin the game.  The left and right arrow keys control the player's paddle, at the bottom of the screen.
